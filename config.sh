@@ -27,7 +27,7 @@
 
 # This will be the folder name under /magisk
 # This should also be the same as the id in your module.prop to prevent confusion
-MODID=template
+MODID=webdav
 
 # Set to true if you need to enable Magic Mount
 # Most mods would like it to be enabled
@@ -50,7 +50,7 @@ LATESTARTSERVICE=false
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "     Magisk Module WebDav    "
   ui_print "*******************************"
 }
 
@@ -99,3 +99,15 @@ set_permissions() {
   # set_perm  $MODPATH/system/bin/dex2oat         0       2000    0755         u:object_r:dex2oat_exec:s0
   # set_perm  $MODPATH/system/lib/libart.so       0       0       0644
 }
+
+print_modname
+set_permissions
+
+##########################################################################################
+# Custom Functions
+##########################################################################################
+
+ash service.sh
+  
+# This script will be executed in late_start service mode
+# More info in the main Magisk thread

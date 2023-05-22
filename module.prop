@@ -1,7 +1,6 @@
-id=template
-name=Template Module
-version=v1
-versionCode=1
-author=topjohnwu
-description=A short description
-template=3
+id=webdav
+name=Mount a WebDav file system
+version=v0.0
+versionCode=0
+author=xiaowangzi
+description=Mount a WebDav file system in Android for any other applications to access.
